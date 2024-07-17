@@ -8,11 +8,28 @@ let infantCount = 0;
 
 function countButton(count, span) {
     span.textContent = manCount;
-    span.textContent = womanCount;
-    span.textContent = infantCount; 
+    // span.textContent = womanCount;
+    // span.textContent = infantCount; 
 
     return 1;
 }
+
+// function countButton(count, span) {
+//     span.textContent = womanCount;
+//     span.textContent = manCount;
+//     span.textContent = infantCount; 
+
+//     return 1;
+// }
+
+// function countButton(count, span) {
+//     span.textContent = infantCount; 
+//     span.textContent = manCount;
+//     span.textContent = womanCount;
+
+//     return 1;
+// }
+
 
 
 //I get the button element from the id's and add a click event listener to it.
