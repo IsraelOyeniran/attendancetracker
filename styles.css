@@ -8,3 +8,64 @@ body {
 h1 {
     color: #333;
 }
+
+.button {
+    padding: 10px;
+    font-size: 18px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    width: 100%;
+    flex-grow: 1;
+}
+
+.allButton {
+    background-color: #4287f5;
+}
+.manButton {
+    background-color: #4287f5;
+}
+
+.womenButton {
+    background-color: #f542bf;
+}
+
+.youngadultsButton {
+    background-color: #f542bf;
+}
+
+.youngkidsButton {
+    background-color: aliceblue;
+}
+
+.infantButton {
+    background-color: lightgreen;
+}
+
+.container {
+    width: 100px;
+    height: 70px;
+    align-items: center;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+.allCount {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.adultsGroup {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.youngAdultsGroup {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
