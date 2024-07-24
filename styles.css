@@ -9,7 +9,25 @@ h1 {
     color: #333;
 }
 
+p {
+    margin: 10px;
+    font-size: large;
+    font-weight: bolder;
+}
+
 .button {
+    padding: 10px;
+    font-size: 15px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    width: 100%;
+    flex-grow: 1;
+}
+
+.totalButton {
+    background-color: #4287f5;
     padding: 10px;
     font-size: 18px;
     cursor: pointer;
@@ -20,9 +38,6 @@ h1 {
     flex-grow: 1;
 }
 
-.allButton {
-    background-color: #4287f5;
-}
 .manButton {
     background-color: #4287f5;
 }
@@ -32,27 +47,27 @@ h1 {
 }
 
 .youngadultsButton {
-    background-color: #f542bf;
+    background-color: #3a1730;
 }
 
 .youngkidsButton {
-    background-color: aliceblue;
+    background-color: rgb(127, 45, 148);
 }
 
 .infantButton {
-    background-color: lightgreen;
+    background-color: rgb(4, 75, 122);
 }
 
 .container {
     width: 100px;
     height: 70px;
     align-items: center;
-    padding: 20px;
+    padding: 30px;
     border: 1px solid #ccc;
     border-radius: 10px;
 }
 
-.allCount {
+.totalCount {
     display: flex;
     justify-content: center;
     gap: 20px;
@@ -64,7 +79,7 @@ h1 {
     gap: 20px;
 }
 
-.youngAdultsGroup {
+.otherGroup {
     display: flex;
     justify-content: center;
     gap: 20px;
