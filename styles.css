@@ -29,7 +29,7 @@ p {
 .totalButton {
     background-color: #4287f5;
     padding: 10px;
-    font-size: 18px;
+    font-size: 15px;
     cursor: pointer;
     border: none;
     border-radius: 5px;
@@ -38,7 +38,7 @@ p {
     flex-grow: 1;
 }
 
-.manButton {
+.menButton {
     background-color: #4287f5;
 }
 
