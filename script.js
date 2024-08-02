@@ -21,7 +21,9 @@ function countButton(count, span) {
 }
 
 function redButtons(buttons) {
-    buttons.style.backgroundColor = 'red';
+    for (let i = 0; i < buttons.length; i++) {
+        buttons[i].style.backgroundColor = 'red';
+    }    
 }
 
 // Function to update the total count
@@ -38,6 +40,7 @@ const youngadultsButton = document.getElementById("youngadultsButton");
 const youngkidsButton = document.getElementById("youngkidsButton");
 const infantButton = document.getElementById("infantButton")
 let buttons = [menButton,womenButton,youngadultsButton,youngkidsButton,infantButton];
+
 
 menButton.addEventListener('click', function() {
     menCount = countButton(menCount, menCountSpan);
