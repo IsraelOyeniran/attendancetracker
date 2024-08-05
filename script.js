@@ -32,9 +32,6 @@ const youngadultsButton = document.getElementById("youngadultsButton");
 const youngkidsButton = document.getElementById("youngkidsButton");
 const infantButton = document.getElementById("infantButton")
 
-// allButton.addEventListener('click', function() {
-//     allCounts = countButton(allCounts, allCountSpan);
-// });
 
 manButton.addEventListener('click', function() {
     manCount = countButton(manCount, manCountSpan);
@@ -54,37 +51,6 @@ youngkidsButton.addEventListener('click', function() {
 
 infantButton.addEventListener('click', function() {
     infantCount = countButton(infantCount, infantCountSpan);
-});
-
-
-
-
-// Select all number buttons and the total button
-const numberButtons = document.querySelectorAll('.number-button');
-const totalButton = document.querySelector('.total-button');
-const totalCountDisplay = document.getElementById('total-count');
-
-// Initialize total count
-let totalCount = 0;
-
-// Add click event listeners to number buttons
-numberButtons.forEach(button => {
-    button.addEventListener('click', () => {
-        // Get the number from the button text and convert to integer
-        const number = parseInt(button.textContent);
-        
-        // Add the number to the total count
-        totalCount += number;
-        
-        // Update the total count display
-        totalCountDisplay.textContent = `Total: ${totalCount}`;
-    });
-});
-
-// Add click event listener to total button (optional)
-totalButton.addEventListener('click', () => {
-    // You can perform additional actions here if needed
-    alert(`The total count is ${totalCount}`);
 });
 
 
