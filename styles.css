@@ -1,8 +1,14 @@
+html {
+    height: 100%;
+}
+
 body {
     font-family: Arial, sans-serif;
     text-align: center;
+    min-height: 100%;
     margin: 0;
-    padding: 0;
+    padding-bottom: 60px;
+    position: relative;
 }
 
 h1 {
@@ -15,30 +21,52 @@ p {
     font-weight: bolder;
 }
 
-.button {
-    padding: 10px;
-    font-size: 15px;
-    cursor: pointer;
-    border: none;
-    border-radius: 5px;
+#sectionHeader {
+    border-radius: 50px;
     color: white;
-    width: 100%;
-    flex-grow: 1;
+    padding: 5px;
 }
 
-.totalButton {
+.buttonContainer {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.actionButton {
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 18px;
+    padding: 5px 10px;
+    width: 30px;
+}
+
+#incrementButton:hover {
+    background-color: green;
+    color: white;
+    transition: 0.5s ease;
+}
+
+#decrementButton:hover {
+    background-color: red;
+    color: white;
+    transition: 0.5s ease;
+}
+
+.totalCountHeader {
     background-color: #4287f5;
     padding: 10px;
-    font-size: 15px;
-    cursor: pointer;
+    font-size: 18px;
     border: none;
     border-radius: 5px;
     color: white;
-    width: 100%;
-    flex-grow: 1;
+    /* width: 100%;
+    margin-right: 50rem; */
 }
 
-.menButton {
+.manButton {
     background-color: #4287f5;
 }
 
@@ -68,6 +96,7 @@ p {
 }
 
 .totalCount {
+    margin-top: 4rem;
     display: flex;
     justify-content: center;
     gap: 20px;
@@ -83,4 +112,107 @@ p {
     display: flex;
     justify-content: center;
     gap: 20px;
+}
+
+#serviceSelect {
+    margin: auto;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    color: #333;
+    display: block;
+}
+
+.serviceSelection label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+}
+
+#serviceSelect:focus {
+    outline: none;
+    border-color: #35495e;
+    box-shadow: 0 0 0 2px rgba(0,123,255,.25);
+}
+
+#dateSelect {
+    margin: auto;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    color: #333;
+    display: block;
+}
+
+.dateSelection label {
+    /* display: block; */
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+}
+
+#dateSelect:focus {
+    outline: none;
+    border-color: #35495e;
+    box-shadow: 0 0 0 2px rgba(0,123,255,.25);
+}
+
+.appActionButtons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+#exportButton {
+    background-color: #32bb26;
+    color: white;
+    padding: 10px 20px;
+    margin-top: 5rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+#exportButton:hover {
+    background-color: #067534;
+}
+
+#exportButton:disabled {
+    background-color: #496453;
+    color: #a0a0a0;
+    cursor: not-allowed;
+}
+
+#resetButton {
+    background-color: #f44336;
+    color: white;
+    padding: 10px 20px;
+    margin-top: 5rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+#resetButton:hover {
+    background-color: #d32f2f;
+}
+
+.footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 10px;
+    background-color: #333;
+    color: white;
 }

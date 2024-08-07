@@ -9,20 +9,37 @@
 
 <body>
     <h1>Welcome to My Church Attendance Tracker</h1>
-    <div>
-        <input></input>
-        <button>search</button>
+    
+    <div class="serviceSelection">
+        <label for="serviceSelect">Select a Service</label>
+        <select id="serviceSelect">
+            <option value="1" selected>Sunday Worship Service (1st)</option>
+            <option value="2" selected>Sunday Worship Service (2nd)</option>
+            <option value="3">Wednesday Bible Study</option>
+            <option value="4">Monthly Night Vigil</option>
+            <option value="5">Other Programs</option>
+        </select>
     </div>
     <br>
+
+    <form action="/submit-form" method="post">
+        <label for="first-name">Full Name:</label>
+        <input type="text" id="first-name" name="first-name" required>
+        <br><br>
+    </form>
+
+    <div class="dateSelection">
+        <label for="dateSelection">Select a Service</label>
+        <select id="dateSelection">
+            <label for="date">Choose a date:</label>
+            <input type="date" id="date" name="date">
+        </select>
+    </div>
     
     <div class="totalCount">
         <div class="container">
             <button class="totalButton">Total Count</button>
             <p id="totalCount">Total: 0</p>
-            <!-- <span id="allCount">0</span>
-            <button id="totalButton"> 
-                All Counts
-            </button> -->
         </div>
     </div>
     <br>
@@ -30,16 +47,27 @@
     <div class="adultsGroup">
         <div class="container">
             <span id="menCount">0</span>
-                <button id="menButton" class="menButton button"> 
-                    Men
-                </button>
+                
+            <div id="sectionHeader" class="manButton"> 
+                Men
+            </div>
+
+            <div class="buttonContainer">
+                <button type="button" id="incrementButton" class="actionButton" title="Increment"> + </button>
+                <button type="button" id="decrementButton" class="actionButton" title="decrement"> - </button>
+            </div>
         </div>
 
         <div class="container">
-            <span id="womenCount">0</span>
-                <button id="womenButton" class="womenButton button"> 
-                    Women
-                </button>
+            <span id="womanCount">0</span>
+            <div id="sectionHeader" class="womenButton"> 
+                Women
+            </div>
+
+            <div class="buttonContainer">
+                <button type="button" id="incrementButton" class="actionButton" title="Increment"> + </button>
+                <button type="button" id="decrementButton" class="actionButton" title="decrement"> - </button>
+            </div>
         </div>
     </div>
     <br>
@@ -47,29 +75,59 @@
     <div class="otherGroup">
         <div class="container">
             <span id="youngadultsCount">0</span>
-                <button id="youngadultsButton" class="youngadultsButton button"> 
-                    Age:13-18
-                </button>
+            <div id="sectionHeader" class="youngadultsButton"> 
+                Age:13-18
+            </div>
+
+            <div class="buttonContainer">
+                <button type="button" id="incrementButton" class="actionButton" title="Increment"> + </button>
+                <button type="button" id="decrementButton" class="actionButton" title="decrement"> - </button>
+            </div>
         </div>
         <br>
 
         <div class="container">
             <span id="youngkidsCount">0</span>
-                <button id="youngkidsButton" class="youngkidsButton button"> 
-                    Age:6-12
-                </button>
+            <div id="sectionHeader" class="youngkidsButton"> 
+                Age:6-12
+            </div>
+
+            <div class="buttonContainer">
+                <button type="button" id="incrementButton" class="actionButton" title="Increment"> + </button>
+                <button type="button" id="decrementButton" class="actionButton" title="decrement"> - </button>
+            </div>
         </div>
         <br>
 
         <div class="container">
             <span id="infantCount">0</span>
-                <button id="infantButton" class="infantButton button"> 
-                    Age:0-5
-                </button>
+            <div id="sectionHeader" class="infantButton"> 
+                Age:0-5
+            </div>
+
+            <div class="buttonContainer">
+                <button type="button" id="incrementButton" class="actionButton" title="Increment"> + </button>
+                <button type="button" id="decrementButton" class="actionButton" title="decrement"> - </button>
+            </div>
         </div>
         <br>
     </div>
 
+    <div class="appActionButtons">
+        <button id="exportButton"> 
+            Export
+        </button>
+
+        <button id="resetButton"> 
+            Reset
+        </button>
+    </div>
+
+    <div class="footer">
+        <p class="footerText"></p>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.3.1/jspdf.umd.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
