@@ -8,46 +8,58 @@
 </head>
 
 <body>
+    <div class="navbar">
+        <a href="#home">Home</a>
+        <a href="#news">About</a>
+        <div class="dropdown">
+          <button class="dropbtn">MyCAT
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+          </div>
+        </div>
+      </div>
+
     <h1>Welcome to My Church Attendance Tracker</h1>
-    
+
     <div class="serviceSelection">
-        <label for="serviceSelect">Select a Service</label>
+        <label for="serviceSelect">Select a Service:</label>
         <select id="serviceSelect">
-            <option value="1" selected>Sunday Worship Service (1st)</option>
-            <option value="2" selected>Sunday Worship Service (2nd)</option>
+            <option value="1">Sunday Worship Service (1st)</option>
+            <option value="2">Sunday Worship Service (2nd)</option>
             <option value="3">Wednesday Bible Study</option>
             <option value="4">Monthly Night Vigil</option>
-            <option value="5">Other Programs</option>
+            <option value="5">Other Church Programs</option>
         </select>
-    </div>
-    <br>
+        <br>
 
-    <!-- <form action="/submit-form" method="post"> -->
-        <label for="first-name">Full Name:</label>
-        <input type="text" id="first-name" name="first-name" required>
+        <label for="takerSelect">Attendant Taker:</label>
+        <select id="takerSelect">
+            <option value="1">Israel Oyeniran</option>
+            <option value="2">Emmanuel</option>
+            <option value="3">Charity</option>
+        </select>
         <br><br>
-    </form>
 
-    <div class="dateSelection">
-        <label for="dateSelection">Select a Service</label>
-        <select id="dateSelection">
-            <!-- <label for="date">Choose a date:</label> -->
-            <input type="date" id="date" name="date">
-        </select>
+        <label for="dateSelect">Date:</label>
+            <input type="date" id="dateSelect">
     </div>
     
     <div class="totalCount">
         <div class="container">
-            <button class="totalButton">Total Count</button>
-            <p id="totalCount">Total: 0</p>
+            <div class="totalCountHeader">Total Count</div>
+            <p id="totalCount">0</p>
         </div>
     </div>
     <br>
 
     <div class="adultsGroup">
         <div class="container">
-            <span id="menCount">0</span>
-                
+            <span id="manCount">0</span>
+
             <div id="sectionHeader" class="manButton"> 
                 Men
             </div>
