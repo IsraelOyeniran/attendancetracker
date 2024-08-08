@@ -44,6 +44,7 @@ function updateExportButtonState() {
   exportButton.disabled = totalCount <= 0;
 }
 
+<<<<<<< HEAD
 // Reset function to set all counts to 0 and reset selections
 function resetAll() {
   manCountSpan.textContent = 0;
@@ -52,6 +53,8 @@ function resetAll() {
   youngkidsCountSpan.textContent = 0;
   infantCountSpan.textContent = 0;
   totalCountSpan.textContent = 0;
+=======
+>>>>>>> 60730e3f0d526c6c7901faf12a7926c30ccf9d98
 
   serviceSelect.selectedIndex = 0;
 
@@ -137,7 +140,12 @@ exportButton.addEventListener("click", () => {
   doc.save(`Attendance-report (${timestamp}).pdf`);
 });
 
+<<<<<<< HEAD
 // Footer section
 const footerText = document.querySelector(".footerText");
 const currentYear = new Date().getFullYear();
 footerText.innerHTML = `${currentYear} &copy; Developed by Israel`;
+=======
+
+
+>>>>>>> 60730e3f0d526c6c7901faf12a7926c30ccf9d98
