@@ -3,6 +3,7 @@ const serviceSelect = document.getElementById("serviceSelect");
 const exportButton = document.getElementById("exportButton");
 const resetButton = document.getElementById("resetButton");
 
+const takerSelect = document.getElementById("takerSelect")
 const manCountSpan = document.getElementById("manCount");
 const womanCountSpan = document.getElementById("womanCount");
 const youngadultsCountSpan = document.getElementById("youngadultsCount");
@@ -98,12 +99,18 @@ exportButton.addEventListener("click", () => {
   doc.setFont(undefined, "bold");
   doc.text(selectedService, 20, 20);
 
+  const selectorTaker =
+    takerSelect.options[takerSelect.selectedIndex].text;
+  doc.setFontSize(16);
+  doc.setFont(undefined, "bold");
+  doc.text(selectorTaker, 20, 30);  
+
   // Add timestamp to easily know when it was generated
   // This is also used to make the filename unique and identifiable
   const timestamp = new Date().toLocaleString();
   doc.setFontSize(12);
   doc.setFont(undefined, "normal");
-  doc.text(timestamp, 20, 30);
+  doc.text(timestamp, 20, 40);
 
   // Add table of counts
   const counts = [
@@ -127,7 +134,7 @@ exportButton.addEventListener("click", () => {
     { section: "Total Count", count: totalCountSpan.textContent },
   ];
 
-  let yPos = 40;
+  let yPos = 50;
   counts.forEach((item) => {
     doc.text(`${item.section}: ${item.count}`, 20, yPos);
     yPos += 10;
