@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Church Attendance Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="navbar">
+        <a href="#home/index.html">Home</a>
+        <a href="#about/about.html">About</a>
+        <a href="#adults">Adults</a>
+        <a href="#young">Young Adults</a>
+        <a href="#child">Children</a>
+    </div>
+
+    <h1>Welcome to My Church Attendance Tracker</h1>
+
+    
+    <p>Having accurate church service attendee is very important when it comes to
+        tracking a church or congregation growth on a weekly programs, and doing this has never been easier. 
+        Our app is designed to help you manage attendance efficiently and accurately, 
+        making it easier for your church to stay connected with its members.
+    </p>
+
+    <div class="serviceSelection">
+        <label for="serviceSelect">Select a Service:</label>
+        <select id="serviceSelect">
+            <option value="1">Sunday Worship Service (1st)</option>
+            <option value="2">Sunday Worship Service (2nd)</option>
+            <option value="3">Wednesday Bible Study</option>
+            <option value="4">Monthly Night Vigil</option>
+            <option value="5">Other Church Programs</option>
+        </select>
+        <br>
+
+        <label for="takerSelect">Attendant Taker:</label>
+        <select id="takerSelect">
+            <option value="1">Israel Oyeniran</option>
+            <option value="2">Emmanuel</option>
+            <option value="3">Charity</option>
+        </select>
+        <br><br>
+
+        <label for="dateSelect">Date:</label>
+            <input type="date" id="dateSelect">
+    </div>
+    
+    <div class="totalCount">
+        <div class="container">
+            <div class="totalCountHeader">Total Count</div>
+            <p id="totalCount">0</p>
+        </div>
+    </div>
+    <br>
+
+    <div class="adultsGroup">
+        <div class="container">
+            <span id="manCount">0</span>
+
+            <div id="sectionHeader" class="manButton"> 
+                Men
+            </div>
+
+            <div class="buttonContainer">
+                <button type="button" id="incrementButton" class="actionButton" title="Increment"> + </button>
+                <button type="button" id="decrementButton" class="actionButton" title="decrement"> - </button>
+            </div>
+        </div>
+
+        <div class="container">
+            <span id="womanCount">0</span>
+            <div id="sectionHeader" class="womenButton"> 
+                Women
+            </div>
+
+            <div class="buttonContainer">
+                <button type="button" id="incrementButton" class="actionButton" title="Increment"> + </button>
+                <button type="button" id="decrementButton" class="actionButton" title="decrement"> - </button>
+            </div>
+        </div>
+    </div>
+    <br>
+
+    <div class="otherGroup">
+        <div class="container">
+            <span id="youngadultsCount">0</span>
+            <div id="sectionHeader" class="youngadultsButton"> 
+                Age:13-18
+            </div>
+
+            <div class="buttonContainer">
+                <button type="button" id="incrementButton" class="actionButton" title="Increment"> + </button>
+                <button type="button" id="decrementButton" class="actionButton" title="decrement"> - </button>
+            </div>
+        </div>
+        <br>
+
+        <div class="container">
+            <span id="youngkidsCount">0</span>
+            <div id="sectionHeader" class="youngkidsButton"> 
+                Age:6-12
+            </div>
+
+            <div class="buttonContainer">
+                <button type="button" id="incrementButton" class="actionButton" title="Increment"> + </button>
+                <button type="button" id="decrementButton" class="actionButton" title="decrement"> - </button>
+            </div>
+        </div>
+        <br>
+
+        <div class="container">
+            <span id="infantCount">0</span>
+            <div id="sectionHeader" class="infantButton"> 
+                Age:0-5
+            </div>
+
+            <div class="buttonContainer">
+                <button type="button" id="incrementButton" class="actionButton" title="Increment"> + </button>
+                <button type="button" id="decrementButton" class="actionButton" title="decrement"> - </button>
+            </div>
+        </div>
+        <br>
+    </div>
+
+    <div class="appActionButtons">
+        <button id="exportButton"> 
+            Export
+        </button>
+
+        <button id="resetButton"> 
+            Reset
+        </button>
+    </div>
+
+    <div class="footer">
+        <p class="footerText"></p>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.3.1/jspdf.umd.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
