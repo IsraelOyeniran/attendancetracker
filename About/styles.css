@@ -43,7 +43,7 @@ body {
   }
   
 .navbar a:hover, .dropdown:hover .dropbtn {
-    background-color: red;
+    background-color: #9c2525;
   }
   
 .dropdown-content {
@@ -75,12 +75,24 @@ body {
 .box {
     border-radius: 40px;
     max-width: 650px;
-    background-color: #80BCBD;
+    background-color: #f7feff;
     margin: auto;
     padding: 50px;
     border-style: outset;
     border-color: #80BCBD;
     text-align: justify;
+}
+
+#continueButton {
+    background-color: #287eff;
+    color: white;
+    padding: 10px 20px;
+    margin-top: 5rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
 }
 
 .appActionButtons {
