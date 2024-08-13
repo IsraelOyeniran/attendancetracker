@@ -164,7 +164,7 @@ p {
 }
 
 .adultsGroup {
-    display: flex;
+    display: grid;
     justify-content: center;
     gap: 20px;
 }

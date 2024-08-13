@@ -123,8 +123,6 @@ p {
     border: none;
     border-radius: 5px;
     color: white;
-    /* width: 100%;
-    margin-right: 50rem; */
 }
 
 .manButton {
@@ -149,9 +147,9 @@ p {
 
 .container {
     width: 100px;
-    height: 70px;
+    height: 100px;
     align-items: center;
-    padding: 30px;
+    padding: 50px;
     border: 1px solid #ccc;
     border-radius: 10px;
 }
@@ -164,7 +162,7 @@ p {
 }
 
 .adultsGroup {
-    display: flex;
+    display: grid;
     justify-content: center;
     gap: 20px;
 }
