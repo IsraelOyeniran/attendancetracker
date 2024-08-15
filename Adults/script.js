@@ -6,9 +6,9 @@ const resetButton = document.getElementById("resetButton");
 const takerSelect = document.getElementById("takerSelect")
 const manCountSpan = document.getElementById("manCount");
 const womanCountSpan = document.getElementById("womanCount");
-const youngadultsCountSpan = document.getElementById("youngadultsCount");
-const youngkidsCountSpan = document.getElementById("youngkidsCount");
-const infantCountSpan = document.getElementById("infantCount");
+// const youngadultsCountSpan = document.getElementById("youngadultsCount");
+// const youngkidsCountSpan = document.getElementById("youngkidsCount");
+// const infantCountSpan = document.getElementById("infantCount");
 
 function updateTotalCount() {
   const countSpans = document.querySelectorAll(".container > span");
@@ -49,9 +49,9 @@ function updateExportButtonState() {
 function resetAll() {
   manCountSpan.textContent = 0;
   womanCountSpan.textContent = 0;
-  youngadultsCountSpan.textContent = 0;
-  youngkidsCountSpan.textContent = 0;
-  infantCountSpan.textContent = 0;
+  // youngadultsCountSpan.textContent = 0;
+  // youngkidsCountSpan.textContent = 0;
+  // infantCountSpan.textContent = 0;
   totalCountSpan.textContent = 0;
 
   serviceSelect.selectedIndex = 0;
@@ -119,18 +119,18 @@ exportButton.addEventListener("click", () => {
       section: "Women",
       count: womanCountSpan.textContent,
     },
-    {
-      section: "Age 13-18",
-      count: youngadultsCountSpan.textContent,
-    },
-    {
-      section: "Age 6-12",
-      count: youngkidsCountSpan.textContent,
-    },
-    {
-      section: "Age 0-5",
-      count: infantCountSpan.textContent,
-    },
+    // {
+    //   section: "Age 13-18",
+    //   count: youngadultsCountSpan.textContent,
+    // },
+    // {
+    //   section: "Age 6-12",
+    //   count: youngkidsCountSpan.textContent,
+    // },
+    // {
+    //   section: "Age 0-5",
+    //   count: infantCountSpan.textContent,
+    // },
     { section: "Total Count", count: totalCountSpan.textContent },
   ];
 
