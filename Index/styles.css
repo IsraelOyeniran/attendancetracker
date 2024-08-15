@@ -76,15 +76,26 @@ body {
   }
 
 h1 {
-    color: #f47a59;
+    color: #d32f2f;
+}
+
+ul {
+    list-style-type: none; /* Remove default bullet points */
+    padding: 0;
+}
+
+li {
+    margin: 10px 0;
+    font-size: 22px;
 }
 
 p {
     margin: 20%;
-    font-size: x-large;
+    font-size: xx-large;
     font-weight: bolder;
     margin-top: 50px;
     margin-bottom: 50px;
+    color: #ffffff;
 }
 
 #sectionHeader {
@@ -234,10 +245,23 @@ p {
     box-shadow: 0 0 0 2px rgba(0,123,255,.25);
 }
 
+#continueButton {
+    background-color: #287eff;
+    color: white;
+    padding: 10px 20px;
+    margin-top: 5rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bolder;
+    transition: background-color 0.3s;
+    text-decoration: none;
+}
+
 .appActionButtons {
     display: flex;
     justify-content: center;
-    gap: 18px;
+    gap: 15px;
     margin-bottom: 20px;
 }
 
