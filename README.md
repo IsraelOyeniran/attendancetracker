@@ -17,13 +17,17 @@ MyCAT is a church attendance tracking application that helps you manage and moni
 ### Steps
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/yourappname.git
+   git clone https://github.com/IsraelOyeniran/attendancetracker.git
 
-   cd yourappname
+   cd attendancetracker
 
    npm install
 
    npm start
+
+
+
+   
 
 
 
