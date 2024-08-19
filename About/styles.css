@@ -1,6 +1,6 @@
-html {
+/* html {
     height: 100%;
-}
+} */
 
 body {
     font-family: Arial, sans-serif;
@@ -102,12 +102,12 @@ body {
     text-decoration: none;
 }
 
-.appActionButtons {
+/* .appActionButtons {
     display: flex;
     justify-content: center;
     gap: 15px;
     margin-bottom: 20px;
-}
+} */
 
 #exportButton {
     background-color: #32bb26;
@@ -151,7 +151,7 @@ body {
     left: 0;
     bottom: 0;
     width: 100%;
-    padding: 10px;
+    padding: 1px;
     background-color: #333;
     color: white;
 }

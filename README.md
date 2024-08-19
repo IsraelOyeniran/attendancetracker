@@ -17,11 +17,8 @@ This project is a reflection of my commitment to my faith and my church communit
 - Customizable: Tailor the app to meet the specific needs of your church community.
 
 ## 5. Installation
-### a. Prerequisites
-- Node.js
-- npm
 
-### b. Steps
+### a. Steps
 1. Clone the repository:
    ```bash
    git clone https://github.com/IsraelOyeniran/attendancetracker.git
