@@ -47,11 +47,11 @@ function updateExportButtonState() {
 
 // Reset function to set all counts to 0 and reset selections
 function resetAll() {
-  manCountSpan.textContent = 0;
-  womanCountSpan.textContent = 0;
+  // manCountSpan.textContent = 0;
+  // womanCountSpan.textContent = 0;
   youngadultsCountSpan.textContent = 0;
-  youngkidsCountSpan.textContent = 0;
-  infantCountSpan.textContent = 0;
+  // youngkidsCountSpan.textContent = 0;
+  // infantCountSpan.textContent = 0;
   totalCountSpan.textContent = 0;
 
   serviceSelect.selectedIndex = 0;
@@ -114,23 +114,23 @@ exportButton.addEventListener("click", () => {
 
   // Add table of counts
   const counts = [
-    { section: "Men", count: manCountSpan.textContent },
-    {
-      section: "Women",
-      count: womanCountSpan.textContent,
-    },
+    // { section: "Men", count: manCountSpan.textContent },
+    // {
+    //   section: "Women",
+    //   count: womanCountSpan.textContent,
+    // },
     {
       section: "Age 13-18",
       count: youngadultsCountSpan.textContent,
     },
-    {
-      section: "Age 6-12",
-      count: youngkidsCountSpan.textContent,
-    },
-    {
-      section: "Age 0-5",
-      count: infantCountSpan.textContent,
-    },
+    // {
+    //   section: "Age 6-12",
+    //   count: youngkidsCountSpan.textContent,
+    // },
+    // {
+    //   section: "Age 0-5",
+    //   count: infantCountSpan.textContent,
+    // },
     { section: "Total Count", count: totalCountSpan.textContent },
   ];
 

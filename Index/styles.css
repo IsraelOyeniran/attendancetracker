@@ -89,7 +89,7 @@ li {
     font-size: 22px;
 }
 
-p {
+h2 {
     margin: 20%;
     font-size: xx-large;
     font-weight: bolder;
@@ -97,6 +97,15 @@ p {
     margin-bottom: 50px;
     color: #ffffff;
 }
+
+/* p {
+    margin: 20%;
+    font-size: xx-large;
+    font-weight: bolder;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    color: #ffffff;
+} */
 
 #sectionHeader {
     border-radius: 50px;
@@ -135,26 +144,33 @@ p {
 .totalCountHeader {
     background-color: #4287f5;
     padding: 10px;
-    font-size: 18px;
+    font-size: 30px;
     border: none;
     border-radius: 5px;
     color: white;
+    margin-bottom: 100px;
 }
 
 .manButton {
     background-color: #4287f5;
+    font-size: 30px;
+    margin-top: 100px;
 }
 
 .womenButton {
     background-color: #f542bf;
+    font-size: 30px;
+    margin-top: 100px;
 }
 
 .youngadultsButton {
     background-color: #3a1730;
+    font-size: 30px;
 }
 
 .youngkidsButton {
     background-color: rgb(127, 45, 148);
+    font-size: 30px;
 }
 
 .infantButton {
@@ -162,19 +178,22 @@ p {
 }
 
 .container {
-    width: 100px;
-    height: 70px;
+    width: 200px;
+    height: 250px;
     align-items: center;
-    padding: 30px;
-    border: 1px solid #ccc;
+    padding: 50px;
+    padding-bottom: 50px;
+    border: 3px solid #ccc;
     border-radius: 10px;
+    font-size: 60px;
 }
 
 .totalCount {
     margin-top: 4rem;
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 70px;
+    font-size: 30px;
 }
 
 .adultsGroup {
