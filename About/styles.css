@@ -102,12 +102,12 @@ body {
     text-decoration: none;
 }
 
-/* .appActionButtons {
+.appActionButtons {
     display: flex;
     justify-content: center;
     gap: 15px;
     margin-bottom: 20px;
-} */
+}
 
 #exportButton {
     background-color: #32bb26;
