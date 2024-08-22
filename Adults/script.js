@@ -9,6 +9,12 @@ const womanCountSpan = document.getElementById("womanCount");
 // const youngadultsCountSpan = document.getElementById("youngadultsCount");
 // const youngkidsCountSpan = document.getElementById("youngkidsCount");
 // const infantCountSpan = document.getElementById("infantCount");
+let manCount = 0;
+let womanCount = 0;
+let youngadultsCount = 0;
+let youngkidsCount = 0;
+let infantCount = 0;
+let totalCount = 0;
 
 function updateTotalCount() {
   const countSpans = document.querySelectorAll(".container > span");
@@ -114,26 +120,18 @@ exportButton.addEventListener("click", () => {
 
   // Add table of counts
   const counts = [
-    { section: "Men", count: manCountSpan.textContent },
-    {
-      section: "Women",
-      count: womanCountSpan.textContent,
-    },
-    // {
-    //   section: "Age 13-18",
-    //   count: youngadultsCountSpan.textContent,
-    // },
-    // {
-    //   section: "Age 6-12",
-    //   count: youngkidsCountSpan.textContent,
-    // },
-    // {
-    //   section: "Age 0-5",
-    //   count: infantCountSpan.textContent,
-    // },
-    { section: "Total Count", count: totalCountSpan.textContent },
+    { section: "Men", count: manCount },
+    { section: "Women", count: womanCount},
+    { section: "Age 13-18", count: youngadultsCount},
+    
+    { section: "Age 6-12",
+      count: youngkidsCount},
+    
+    { section: "Age 0-5",
+      count: infantCount},
+    { section: "Total Count", count: totalCount },
   ];
-
+ 
   let yPos = 50;
   counts.forEach((item) => {
     doc.text(`${item.section}: ${item.count}`, 20, yPos);
