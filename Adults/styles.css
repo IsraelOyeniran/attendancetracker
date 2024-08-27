@@ -91,7 +91,7 @@ p {
 
 #sectionHeader {
     border-radius: 50px;
-    color: white;
+    color: rgb(255, 255, 255);
     padding: 5px;
     margin-bottom: 10;
 }
@@ -131,7 +131,7 @@ p {
     font-size: 30px;
     border: none;
     border-radius: 5px;
-    color: white;
+    color: rgb(255, 255, 255);
     margin-bottom: 100px;
 }
 
@@ -229,7 +229,7 @@ p {
 
 #takerSelect:focus {
     outline: none;
-    border-color: #35495e;
+    border-color: #000000;
     box-shadow: 0 0 0 2px rgba(0,123,255,.25);
 }
 
@@ -239,7 +239,7 @@ p {
     border: 2px solid #bdbdbd;
     border-radius: 4px;
     font-size: 20px;
-    color: #333;
+    color: #000000;
     display: block;
 }
 
