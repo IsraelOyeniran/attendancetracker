@@ -5,10 +5,17 @@ html {
 body {
     font-family: Arial, sans-serif;
     text-align: center;
-    min-height: 100%;
     margin: 0;
-    padding-bottom: 60px;
     position: relative;
+    padding: 0;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100%;
+    width: 100%;
+    color: rgb(255, 255, 255);
+    background-color: #4e4e4ef8;
 }
 
 .navbar {
@@ -73,17 +80,18 @@ body {
   }
 
 h1 {
-    color: #333;
+    color: #d32f2f;
 }
 
 p {
-    margin: 100px;
-    font-size: 60px;
+    margin: 20px;
+    font-size: 15px;
+    font-weight: bold;
 }
 
 #sectionHeader {
     border-radius: 50px;
-    color: white;
+    color: rgb(255, 255, 255);
     padding: 5px;
     margin-bottom: 10;
 }
@@ -123,34 +131,13 @@ p {
     font-size: 30px;
     border: none;
     border-radius: 5px;
-    color: white;
+    color: rgb(255, 255, 255);
     margin-bottom: 100px;
-}
-
-.manButton {
-    background-color: #4287f5;
-    font-size: 30px;
-    margin-top: 100px;
-}
-
-.womenButton {
-    background-color: #f542bf;
-    font-size: 30px;
-    margin-top: 100px;
 }
 
 .youngadultsButton {
     background-color: #3a1730;
     font-size: 30px;
-}
-
-.youngkidsButton {
-    background-color: rgb(127, 45, 148);
-    font-size: 30px;
-}
-
-.infantButton {
-    background-color: rgb(4, 75, 122);
 }
 
 .container {
@@ -173,9 +160,10 @@ p {
 }
 
 .adultsGroup {
-    display: flex;
+    display: grid;
     justify-content: center;
-    gap: 20px;
+    gap: 70px;
+    font-size: 30px;
 }
 
 .otherGroup {
@@ -189,17 +177,17 @@ p {
     padding: auto;
     border: 2px solid #bdbdbd;
     border-radius: 4px;
-    font-size: 14px;
-    color: #333;
+    font-size: 20px;
+    color: #080808;
     display: block;
 }
 
 .serviceSelection label {
     display: block;
     margin-bottom: 10px;
-    font-size: 16px;
-    font-weight: bold;
-    color: #333;
+    font-size: 20px;
+    font-weight: bolder;
+    color: #ffffff;
 }
 
 #serviceSelect:focus {
@@ -213,14 +201,14 @@ p {
     padding: auto;
     border: 2px solid #bdbdbd;
     border-radius: 4px;
-    font-size: 14px;
-    color: #333;
+    font-size: 20px;
+    color: #000000;
     display: block;
 }
 
 #takerSelect:focus {
     outline: none;
-    border-color: #35495e;
+    border-color: #000000;
     box-shadow: 0 0 0 2px rgba(0,123,255,.25);
 }
 
@@ -229,8 +217,8 @@ p {
     padding: auto;
     border: 2px solid #bdbdbd;
     border-radius: 4px;
-    font-size: 14px;
-    color: #333;
+    font-size: 20px;
+    color: #000000;
     display: block;
 }
 
@@ -243,7 +231,7 @@ p {
 .appActionButtons {
     display: flex;
     justify-content: center;
-    gap: 15px;
+    gap: 5px;
     margin-bottom: 20px;
 }
 
@@ -286,7 +274,6 @@ p {
 }
 
 .footer {
-    position: absolute;
     left: 0;
     bottom: 0;
     width: 100%;

@@ -15,7 +15,8 @@ body {
     background-attachment: fixed;
     height: 100%;
     width: 100%;
-    color: rgb(14, 13, 13);
+    color: rgb(255, 255, 255);
+    background-color: #4e4e4ef8;
 }
 
 .navbar {
