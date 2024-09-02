@@ -18,6 +18,10 @@ body {
     color: rgb(0, 0, 0);
 }
 
+/* .transparent-image { opacity: 0.5; } */
+
+
+
 .navbar {
     overflow: hidden;
     background-color: #333;
